@@ -257,16 +257,17 @@ nav ul li a:hover::after {
 
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
 }
 
 .menu-item {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 250px;
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    height: auto;
 }
 
 .menu-item:hover {
@@ -275,7 +276,7 @@ nav ul li a:hover::after {
 }
 
 .menu-item-img {
-    height: 200px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -285,6 +286,15 @@ nav ul li a:hover::after {
     object-fit: cover;
     transition: var(--transition);
 }
+/* Obrazek dla sałatki */
+.menu-item-img-sal img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition: var(--transition);
+    display: block; /* Ustawienie obrazka jako bloku */
+    margin: auto; /* Wyśrodkowanie obrazka */
+}
 
 .menu-item:hover .menu-item-img img {
     transform: scale(1.1);
@@ -292,23 +302,26 @@ nav ul li a:hover::after {
 
 .menu-item-content {
     padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .menu-item-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 8px;
     color: var(--secondary-color);
 }
 
 .menu-item-content p {
     color: var(--gray-color);
     margin-bottom: 15px;
+    font-size: 0.6rem;
 }
 
 .price {
-    font-weight: 700;
+    font-weight: 400;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: block;
 }
 
