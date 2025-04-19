@@ -126,17 +126,21 @@ header .container {
 }
 
 .logo-img {
-    width: 50px; /* Dostosuj szerokość logo */
+    width: 100px; /* Dostosuj szerokość logo */
     height: auto; /* Zachowaj proporcje */
-    margin-right: 100px; /* Odstęp między logo a tekstem */
-    vertical-align: middle; /* Wyrównanie do środka tekstu */
+    margin-right: 10px; /* Odstęp między logo a tekstem */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Wyrównanie logo i tekstu w pionie */
 }
 
 .logo h1 {
     font-size: 2rem;
     color: var(--primary-color);
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
 }
 
 .logo p {
