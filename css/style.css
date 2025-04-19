@@ -397,8 +397,11 @@ nav ul li a:hover::after {
 
 .contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Siatka z kolumnami */
+    gap: 30px; /* Odstępy między kafelkami */
+    margin: 0 auto; /* Wyśrodkowanie w poziomie */
+    width: 80%; /* Opcjonalnie: szerokość kontenera */
+    max-width: 800px; /* Opcjonalnie: maksymalna szerokość */
 }
 
 .info-item {
@@ -408,6 +411,10 @@ nav ul li a:hover::after {
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-item:hover {
@@ -444,32 +451,6 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     color: var(--secondary-color);
     text-align: center;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(215, 52, 39, 0.2);
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: none;
 }
 
 .map {
