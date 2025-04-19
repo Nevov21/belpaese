@@ -125,6 +125,13 @@ header .container {
     align-items: center;
 }
 
+.logo-img {
+    width: 50px; /* Dostosuj szerokość logo */
+    height: auto; /* Zachowaj proporcje */
+    margin-right: 100px; /* Odstęp między logo a tekstem */
+    vertical-align: middle; /* Wyrównanie do środka tekstu */
+}
+
 .logo h1 {
     font-size: 2rem;
     color: var(--primary-color);
