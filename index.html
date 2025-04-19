@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belpaese - Najlepsza Pizzeria w Mieście</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Belpaese</h1>
+                <p>Autentyczna Włoska Pizza</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">O Nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Prawdziwa Włoska Pizza</h2>
+                <p>Przygotowana z najlepszych składników, według tradycyjnych receptur</p>
+                <a href="#menu" class="btn">Zobacz Menu</a>
+                <a href="#contact" class="btn btn-outline">Zamów Teraz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nasze Menu</h2>
+                <p>Odkryj nasze wyjątkowe pizze</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category active" data-category="all">Wszystkie</button>
+                <button class="category" data-category="classic">Klasyczne</button>
+                <button class="category" data-category="special">Specjalne</button>
+                <button class="category" data-category="vege">Wegetariańskie</button>
+            </div>
+            <div class="menu-items">
+                <!-- Classic Pizzas -->
+                <div class="menu-item" data-category="classic">
+                    <div class="menu-item-img">
+                        <img src="images/margherita.jpg" alt="Pizza Margherita">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Margherita</h3>
+                        <p>Sos pomidorowy, mozzarella, bazylia</p>
+                        <span class="price">29 zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="classic">
+                    <div class="menu-item-img">
+                        <img src="images/pepperoni.jpg" alt="Pizza Pepperoni">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pepperoni</h3>
+                        <p>Sos pomidorowy, mozzarella, pepperoni</p>
+                        <span class="price">35 zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="classic">
+                    <div class="menu-item-img">
+                        <img src="images/capricciosa.jpg" alt="Pizza Capricciosa">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Capricciosa</h3>
+                        <p>Sos pomidorowy, mozzarella, szynka, pieczarki, karczochy, oliwki</p>
+                        <span class="price">38 zł</span>
+                    </div>
+                </div>
+
+                <!-- Special Pizzas -->
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-img">
+                        <img src="images/quattro-formaggi.jpg" alt="Pizza Quattro Formaggi">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Quattro Formaggi</h3>
+                        <p>Sos śmietanowy, mozzarella, gorgonzola, parmezan, ricotta</p>
+                        <span class="price">42 zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-img">
+                        <img src="images/prosciutto.jpg" alt="Pizza Prosciutto">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Prosciutto e Rucola</h3>
+                        <p>Sos pomidorowy, mozzarella, prosciutto crudo, rukola, parmezan</p>
+                        <span class="price">45 zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="special">
+                    <div class="menu-item-img">
+                        <img src="images/diavola.jpg" alt="Pizza Diavola">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Diavola</h3>
+                        <p>Sos pomidorowy, mozzarella, pikantne salami, papryczki chili</p>
+                        <span class="price">39 zł</span>
+                    </div>
+                </div>
+
+                <!-- Vegetarian Pizzas -->
+                <div class="menu-item" data-category="vege">
+                    <div class="menu-item-img">
+                        <img src="images/vegetariana.jpg" alt="Pizza Vegetariana">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vegetariana</h3>
+                        <p>Sos pomidorowy, mozzarella, bakłażan, cukinia, papryka, pieczarki</p>
+                        <span class="price">36 zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="vege">
+                    <div class="menu-item-img">
+                        <img src="images/spinaci.jpg" alt="Pizza Spinaci">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Spinaci</h3>
+                        <p>Sos śmietanowy, mozzarella, szpinak, czosnek, ricotta</p>
+                        <span class="price">37 zł</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Nas</h2>
+                <p>Poznaj historię naszej pizzerii</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/about.jpg" alt="Belpaese Pizzeria">
+                </div>
+                <div class="about-text">
+                    <h3>Tradycja i Pasja</h3>
+                    <p>Pizzeria Belpaese to miejsce, gdzie tradycyjne włoskie receptury spotykają się z pasją do gotowania. Nasza historia rozpoczęła się w 2010 roku, kiedy to postanowiliśmy podzielić się z mieszkańcami naszego miasta prawdziwym smakiem Włoch.</p>
+                    <p>Używamy tylko najlepszych składników, a nasze ciasto dojrzewa przez minimum 24 godziny, co nadaje mu niepowtarzalny smak i lekkość. Każda pizza jest przygotowywana ręcznie i wypiekana w piecu opalanym drewnem.</p>
+                    <p>Nasz szef kuchni, Marco Rossi, pochodzi z Neapolu - kolebki pizzy, i dba o to, aby każde danie spełniało najwyższe standardy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria</h2>
+                <p>Zobacz jak wygląda nasza pizzeria i nasze dania</p>
+            </div>
+            <div class="gallery-items">
+                <div class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Wnętrze pizzerii">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Przygotowanie pizzy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Pizza z pieca">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Zadowoleni klienci">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kontakt</h2>
+                <p>Odwiedź nas lub zamów z dostawą</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Adres</h3>
+                        <p>ul. Chełmońskiego 1b, 63-100 Śrem</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefon</h3>
+                        <p>+48 123 456 789</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>kontakt@belpaese.pl</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h3>Godziny otwarcia</h3>
+                        <p>Poniedziałek - Piątek: 12:00 - 22:00</p>
+                        <p>Sobota - Niedziela: 12:00 - 23:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Wyślij wiadomość</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefon">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Wiadomość" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://maps.google.com/maps?q=Bel+Paese+%C5%9Arem&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Belpaese</h2>
+                    <p>Autentyczna Włoska Pizza</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Szybkie Linki</h3>
+                    <ul>
+                        <li><a href="#home">Strona Główna</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">O Nas</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Śledź Nas</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Belpaese. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
