@@ -125,11 +125,22 @@ header .container {
     align-items: center;
 }
 
+.logo-img {
+    width: 100px; /* Dostosuj szerokość logo */
+    height: auto; /* Zachowaj proporcje */
+    margin-right: 10px; /* Odstęp między logo a tekstem */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Wyrównanie logo i tekstu w pionie */
+}
+
 .logo h1 {
     font-size: 2rem;
     color: var(--primary-color);
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
 }
 
 .logo p {
@@ -246,16 +257,17 @@ nav ul li a:hover::after {
 
 .menu-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
 }
 
 .menu-item {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 250px;
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    height: auto;
 }
 
 .menu-item:hover {
@@ -264,7 +276,7 @@ nav ul li a:hover::after {
 }
 
 .menu-item-img {
-    height: 200px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -274,6 +286,15 @@ nav ul li a:hover::after {
     object-fit: cover;
     transition: var(--transition);
 }
+/* Obrazek dla sałatki */
+.menu-item-img-sal img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition: var(--transition);
+    display: block; /* Ustawienie obrazka jako bloku */
+    margin: auto; /* Wyśrodkowanie obrazka */
+}
 
 .menu-item:hover .menu-item-img img {
     transform: scale(1.1);
@@ -281,23 +302,26 @@ nav ul li a:hover::after {
 
 .menu-item-content {
     padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
 }
 
 .menu-item-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-bottom: 8px;
     color: var(--secondary-color);
 }
 
 .menu-item-content p {
     color: var(--gray-color);
     margin-bottom: 15px;
+    font-size: 0.6rem;
 }
 
 .price {
-    font-weight: 700;
+    font-weight: 400;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: block;
 }
 
@@ -373,8 +397,11 @@ nav ul li a:hover::after {
 
 .contact-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Siatka z kolumnami */
+    gap: 30px; /* Odstępy między kafelkami */
+    margin: 0 auto; /* Wyśrodkowanie w poziomie */
+    width: 80%; /* Opcjonalnie: szerokość kontenera */
+    max-width: 800px; /* Opcjonalnie: maksymalna szerokość */
 }
 
 .info-item {
@@ -384,6 +411,10 @@ nav ul li a:hover::after {
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-item:hover {
@@ -420,32 +451,6 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     color: var(--secondary-color);
     text-align: center;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(215, 52, 39, 0.2);
-}
-
-.form-group textarea {
-    height: 150px;
-    resize: none;
 }
 
 .map {
