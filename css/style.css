@@ -322,7 +322,7 @@ nav ul li a:hover::after {
 .price {
     font-weight: 600;
     color: var(--primary-color);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     display: block;
 }
 
