@@ -6,6 +6,7 @@
     <title>Belpaese - Najlepsza Pizzeria w Mieście</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -53,7 +54,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Nasze Menu</h2>
-                <p>Odkryj nasze wyjątkowe pizze</p>
+                <p>Odkryj nasze wyjątkowe pizze<br> Rozmiary pizzy: mała 28cm, duża 32cm, wielka 40cm i rodzinna 50cm</p>
             </div>
             <div class="menu-categories">
                 <button class="category active" data-category="all">Wszystko</button>
@@ -67,82 +68,352 @@
                 <!-- Pizze -->
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/margherita.jpg" alt="Pizza Margherita">
+                        <img src="images/pizza/margherita.jpg" alt="Pizza Margherita">
                     </div>
                     <div class="menu-item-content">
                         <h3>Margharita</h3>
-                        <p>Sos pomidorowy, mozzarella, bazylia</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <p>sos pomidorowy / ser mozzarella Galbani</p>
+                        <span class="price">Cena: <br>26zł/33zł/49zł/70zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/prosciutto.jpg" alt="Pizza Prosciutto">
+                        <img src="images/pizza/prosciutto.jpg" alt="Pizza Prosciutto">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Pepperoni</h3>
-                        <p>Sos pomidorowy, mozzarella, szynka</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <h3>Prosciutto</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / szynka wieprzowa</p>
+                        <span class="price">Cena: <br>29zł/36zł/55zł/76zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/capriciossa.jpg" alt="Pizza Capricciosa">
+                        <img src="images/pizza/salami.jpg" alt="Pizza Capricciosa">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Salami</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / salami</p>
+                        <span class="price">Cena: <br>29zł/36zł/55zł/76zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/capriciossa.jpg" alt="Pizza Capricciosa">
                     </div>
                     <div class="menu-item-content">
                         <h3>Capricciosa</h3>
-                        <p>Sos pomidorowy, mozzarella, szynka, pieczarki, karczochy, oliwki</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <p>sos pomidorowy / ser mozzarella Galbani / szynka wieprzowa / pieczarki</p>
+                        <span class="price">Cena: <br>31zł/38zł/56zł/77zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/camembert.jpg" alt="Pizza Camemebert">
+                        <img src="images/pizza/campagnola.jpg" alt="Pizza Camemebert">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Campagnola</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / salami / cebula</p>
+                        <span class="price">Cena: <br>31zł/38zł/56zł/77zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/hawaii.jpg" alt="Pizza Camemebert">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Hawai</h3>
+                        <p>Sos śmietanowy, mozzarella, gorgonzola, parmezan, ricotta</p>
+                        <span class="price">Cena: <br>26zł/33zł/49zł/70zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/rodos.jpg" alt="Pizza Camemebert">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Rodos</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / salami / zielone oliwki / kapary</p>
+                        <span class="price">Cena: <br>33zł/40,50zł/57zł/78zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/ragu.jpg" alt="Pizza Camemebert">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Ragu</h3>
+                        <p>ragu bolognese / sos beszamelowy / ser mozzarella Cammino d'Oro / ser mozzarella Galbani / świeża bazylia</p>
+                        <span class="price">Cena: <br>33zł/40,50zł/57zł/78zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/rzemieslnicza.jpg" alt="Pizza Rzemieślnicza">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Rzemieślnicza</h3>
+                        <p>ser mozzarella Galbani / sos pomidorowy / szynka długo dojrzewająca peklowana na sucho</p>
+                        <span class="price">Cena: <br>33zł/40,50zł/57zł/78zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/la_bella.jpg" alt="Pizza La Bella">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>La Bella</h3>
+                        <p>szynka wieprzowa / sos pomidorowy / ser mozzarella Galbani / kurczak / papryka</p>
+                        <span class="price">Cena: <br>33zł/40,5zł/57zł/78zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/giovani.jpg" alt="Pizza Giovani">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Giovani</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / szynka wieprzowa / pieczarki / kabanos</p>
+                        <span class="price">Cena: <br>33zł/40,50zł/57zł/78zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/wegetariana.jpg" alt="Pizza Wegetariana">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Wegetariana</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / pieczarki / cebula / papryka / szparagi</p>
+                        <span class="price">Cena: <br>33zł/40,50zł/57zł/78zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/napoli.jpg" alt="Pizza Napoli">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Napoli</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / tuńczyk / czarne oliwki / kapary</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/diabolo.jpg" alt="Pizza Diabolo">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Diabolo</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / salami / papryka peperoni / czosnek w oliwie</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/karczoch.jpg" alt="Pizza Karczoch">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Karczoch</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / szynka wieprzowa / pieczarki / karczoch włoski / czarne oliwki</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/jerry.jpg" alt="Pizza Jerry">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Jerry</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / szynka wieprzowa / pieczarki / szparagi / groszek</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/vinci.jpg" alt="Pizza Vinci">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Vinci</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / szynka wieprzowa / salami / papryka / zielone oliwki</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/jalapeno.jpg" alt="Pizza Jalapeno">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Jalapeno</h3>
+                        <p>ser pomidorowy / ser mozzarella Galbani / salami / ser gorgonzola / papryczka jalapeno / pieczone pomidorki cherry</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/sloneczna.jpg" alt="Pizza Słoneczna">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Słoneczna</h3>
+                        <p>ananas / kukurydza / oregano / ser mozzarella Galbani / sos pomidorowy / tuńczyk</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/camembert.jpg" alt="Pizza Camembert">
                     </div>
                     <div class="menu-item-content">
                         <h3>Camembert</h3>
-                        <p>Sos śmietanowy, mozzarella, gorgonzola, parmezan, ricotta</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <p>sos pomidorowy / ser mozzarella Galbani / ser gorgonzola / sos / ser Emilgrana / szczypiorek</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/prosciutto.jpg" alt="Pizza Prosciutto">
+                        <img src="images/pizza/kebab.jpg" alt="Pizza Kebab">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Prosciutto e Rucola</h3>
-                        <p>Sos pomidorowy, mozzarella, prosciutto crudo, rukola, parmezan</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <h3>Pizza Kebab</h3>
+                        <p>kapusta pekińska / kurczak z kebaba / ogórek / pomidor / ser mozzarella Galbani / sos pomidorowy</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/diavola.jpg" alt="Pizza Diavola">
+                        <img src="images/pizza/millano.jpg" alt="Pizza Millano">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Diavola</h3>
-                        <p>Sos pomidorowy, mozzarella, pikantne salami, papryczki chili</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <h3>Millano</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / salami Millano / oliwki w ziołach z regionu kalamata / pieczone pomidorki cherry</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/vegetariana.jpg" alt="Pizza Vegetariana">
+                        <img src="images/pizza/millano_duo.jpg" alt="Pizza Millano Due">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Vegetariana</h3>
-                        <p>Sos pomidorowy, mozzarella, bakłażan, cukinia, papryka, pieczarki</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <h3>Milanno Due</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / salami Millano / oliwki w ziołach z regionu kalamata / pieczone pomidorki cherry / sałata rukola / ser Emilgrana</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
                     </div>
                 </div>
                 <div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
-                        <img src="images/spinaci.jpg" alt="Pizza Spinaci">
+                        <img src="images/pizza/verona.jpg" alt="Pizza Verona">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Spinaci</h3>
-                        <p>Sos śmietanowy, mozzarella, szpinak, czosnek, ricotta</p>
-                        <span class="price">Mała: 29 zł<br>Duża: 30zł<br>Wielka: 35zł<br>Rodzinna: 50zł</span>
+                        <h3>Verona</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / kurczak / cebula / papryka / pomidor</p>
+                        <span class="price">Cena: <br>34zł/41,50zł/58zł/79zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/chlopska.jpg" alt="Pizza Chłopska">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chłopska</h3>
+                        <p>cebula / czosnek w oliwie / boczek wędzony / oregano / pieczarki / pomidor / ser mozzarella Galbani / sos pomidorowy</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/marinara.jpg" alt="Pizza Marinara">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Marinara</h3>
+                        <p>sos pomidorowy / ser mozzarella Cammino d'Oro / anchois / czarne oliwki / małże i krewetki tygrysie przygotowane na białym winie i oliwie z oliwek</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/miesna.jpg" alt="Pizza Mięsna">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Mięsna</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / boczek wędzony / oregano / kabanos / cebula / papryka</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/speed.jpg" alt="Pizza Speed">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Speed</h3>
+                        <p>cebula / czosnek w oliwie / boczek wędzony / pomidor / salami / ser mozzarella Galbani / sos pomidorowy / tabasco</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/belpaese.jpg" alt="Pizza Belpaese">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Bel Paese</h3>
+                        <p>czosnek w oliwie / kabanos / oliwki / papryka / salami / ser mozzarella Galbani / sos pomidorowy / szynka wieprzowa / tabasco</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/domowa.jpg" alt="Pizza Domowa">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Domowa</h3>
+                        <p>czosnek w oliwie / kiełbasa czosnkowa / ogórek / pomidor / ser mozzarella Galbani / sos pomidorowy / szczypiorek / pieprz zielony</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/wloska.jpg" alt="Pizza Włoska">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Włoska</h3>
+                        <p>sos pomidorowy / ser mozzarella Galbani / włoska szynka surowa wędzona / ser gorgonzola / pieczone pomidorki cherry / sałata rukola / ser Emilgrana</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/nduja.jpg" alt="Pizza Nduja">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Nduja</h3>
+                        <p>sos pomidorowy / sos mozzarella Galbani / liście szpinaku / papryczka jalapeno / nduja włoska / mascarpone</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/zbojnicka.jpg" alt="Pizza Zbójnicka">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Zbójnicka</h3>
+                        <p>boczek wędzony / kabanos / ser mozzarella Galbani / ser wędzony / sos pomidorowy / szczypiorek</p>
+                        <span class="price">Cena: <br>35zł/43zł/60zł/81zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/agnes.jpg" alt="Pizza Agnes">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Agnes</h3>
+                        <p>ananas / czosnek / kukurydza / kurczak / oregano / ser / sos / szynka</p>
+                        <span class="price">Cena: <br>33zł/39zł/54zł/73,50zł</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-img">
+                        <img src="images/pizza/fantazja.jpg" alt="Pizza Fantazja">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fantazja</h3>
+                        <p>8 wybranych przez Ciebie składników / ser mozzarella Galbani / sos pomidorowy</p>
+                        <span class="price">Cena: <br>37zł/45zł/62zł/83zł</span>
                     </div>
                 </div>
                 <!-- Sałatki -->
@@ -212,13 +483,13 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="images/about.jpg" alt="Belpaese Pizzeria">
+                    <img src="images/billa.jpg" alt="Belpaese Pizzeria">
                 </div>
                 <div class="about-text">
                     <h3>Tradycja i Pasja</h3>
-                    <p>Pizzeria Belpaese to miejsce, gdzie tradycyjne włoskie receptury spotykają się z pasją do gotowania. Nasza historia rozpoczęła się w 2010 roku, kiedy to postanowiliśmy podzielić się z mieszkańcami naszego miasta prawdziwym smakiem Włoch.</p>
-                    <p>Używamy tylko najlepszych składników, a nasze ciasto dojrzewa przez minimum 24 godziny, co nadaje mu niepowtarzalny smak i lekkość. Każda pizza jest przygotowywana ręcznie i wypiekana w piecu opalanym drewnem.</p>
-                    <p>Nasz szef kuchni, Marco Rossi, pochodzi z Neapolu - kolebki pizzy, i dba o to, aby każde danie spełniało najwyższe standardy.</p>
+                    <p>Pizzeria Belpaese to miejsce, gdzie tradycyjne włoskie receptury spotykają się z pasją do gotowania. Nasza historia rozpoczęła się w 2007 roku, kiedy to postanowiliśmy otworzyć FoodTrucku z pizzą pod marketem Billa.</p>
+                    <p>Używamy tylko najlepszych składników, a nasze ciasto dojrzewa przez minimum 24 godziny, co nadaje mu niepowtarzalny smak i lekkość. Każda pizza jest przygotowywana ręcznie i wypiekana w piecu taśmowym.</p>
+                    <p>Nasz szef kuchni, Witold Wypiorczyk, pochodzi z Koła - dlatego tak dobrze kręci pizzą, i dba o to, aby każde danie spełniało najwyższe standardy.</p>
                 </div>
             </div>
         </div>
@@ -233,16 +504,16 @@
             </div>
             <div class="gallery-items">
                 <div class="gallery-item">
-                    <img src="images/gallery1.jpg" alt="Wnętrze pizzerii">
+                    <img src="images/miejsce.jpg" alt="Wnętrze pizzerii">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery2.jpg" alt="Przygotowanie pizzy">
+                    <img src="images/przygotowanie.jpg" alt="Przygotowanie pizzy">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery3.jpg" alt="Pizza z pieca">
+                    <img src="images/z_pieca.jpg" alt="Pizza z pieca">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gallery4.jpg" alt="Zadowoleni klienci">
+                    <img src="images/zadowoleni.jpg" alt="Zadowoleni klienci">
                 </div>
             </div>
         </div>

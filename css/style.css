@@ -314,12 +314,13 @@ nav ul li a:hover::after {
 
 .menu-item-content p {
     color: var(--gray-color);
-    margin-bottom: 15px;
-    font-size: 0.6rem;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.2;
 }
 
 .price {
-    font-weight: 400;
+    font-weight: 600;
     color: var(--primary-color);
     font-size: 0.8rem;
     display: block;
