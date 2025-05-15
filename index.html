@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belpaese - Najlepsza Pizzeria w Mieście</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -24,10 +24,7 @@
             <nav>
                 <ul>
                     <li><a href="#home">Strona Główna</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">O Nas</a></li>
                     <li><a href="#contact">Kontakt</a></li>
-                    <li><a href="https://belpaese.goorder.pl" target="_blank">Zamów Online</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu">
@@ -42,15 +39,16 @@
             <div class="hero-content">
                 <h2>Prawdziwa Włoska Pizza</h2>
                 <p>Przygotowana z najlepszych składników, według tradycyjnych receptur</p>
-                <a href="#menu" class="btn">Zobacz Menu</a>
-                <a href="#contact" class="btn btn-outline">Zamów Telefonicznie</a>
-                <a href="https://belpaese.goorder.pl" class="btn btn-outline" target="_blank">Zamów Online</a>
+                <!-- <a href="#menu" class="btn">Zobacz Menu</a> -->
+                <a href="#contact" class="btn btn-primary">Zamów Telefonicznie</a>
+                <a href="https://belpaese.goorder.pl" class="btn btn-outline" target="_blank">Zamów Online Kościan</a>
+                <a href="https://belpaese.goorder.pl" class="btn btn-outline" target="_blank">Zamów Online Śrem</a>
             </div>
         </div>
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="menu">
+    <!--<section id="menu" class="menu">
         <div class="container">
             <div class="section-header">
                 <h2>Nasze Menu</h2>
@@ -66,7 +64,7 @@
             </div>
             <div class="menu-items">
                 <!-- Pizze -->
-                <div class="menu-item" data-category="pizza">
+                <!--<div class="menu-item" data-category="pizza">
                     <div class="menu-item-img">
                         <img src="images/pizza/margherita.jpg" alt="Pizza Margherita">
                     </div>
@@ -417,7 +415,7 @@
                     </div>
                 </div>
                 <!-- Sałatki -->
-                <div class="menu-item" data-category="salatki">
+                <!--<div class="menu-item" data-category="salatki">
                     <div class="menu-item-img-sal">
                         <img src="images/sal_kebab.jpg" alt="Sałatka Kebab">
                     </div>
@@ -428,7 +426,7 @@
                     </div>
                 </div>
                 <!-- Kebaby -->
-                <div class="menu-item" data-category="kebab">
+                <!--<div class="menu-item" data-category="kebab">
                     <div class="menu-item-img">
                         <img src="images/duzy_kebab.jpg" alt="Sałatka Kebab">
                     </div>
@@ -449,7 +447,7 @@
                     </div>
                 </div>
                 <!-- Burgery -->
-                <div class="menu-item" data-category="burger">
+                <!--<div class="menu-item" data-category="burger">
                     <div class="menu-item-img">
                         <img src="images/belburger.jpg" alt="Sałatka Kebab">
                     </div>
@@ -460,7 +458,7 @@
                     </div>
                 </div>
                 <!-- Dodatki -->
-                <div class="menu-item" data-category="dodatki">
+                <!--<div class="menu-item" data-category="dodatki">
                     <div class="menu-item-img">
                         <img src="images/frytki.jpg" alt="Sałatka Kebab">
                     </div>
@@ -472,10 +470,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <!--<section id="about" class="about">
         <div class="container">
             <div class="section-header">
                 <h2>O Nas</h2>
@@ -496,7 +494,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery">
+    <!--<section class="gallery">
         <div class="container">
             <div class="section-header">
                 <h2>Galeria</h2>
@@ -536,7 +534,7 @@
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <h3>Telefon</h3>
-                        <p>+48 123 456 789</p>
+                        <p>+48 61 284 10 84</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-shopping-cart"></i>
@@ -591,7 +589,7 @@
 
     <script src="js/script.js"></script>
 <!-- Modal for enlarged image -->
-<div id="imageModal" class="modal">
+<!--<div id="imageModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-img" id="modalImage">
     <div class="modal-caption" id="modalCaption"></div>
@@ -660,6 +658,7 @@ window.addEventListener("click", function (e) {
         document.getElementById("imageModal").style.display = "none";
     }
 });
-</script>
+</script> -->
+
 </body>
 </html>

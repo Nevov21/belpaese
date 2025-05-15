@@ -74,6 +74,7 @@ img {
 .section-header p {
     color: var(--gray-color);
     font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
 .btn {
@@ -376,24 +377,24 @@ nav ul li a:hover::after {
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 10px;
     margin-bottom: 50px;
 }
 
 .contact-info {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Siatka z kolumnami */
-    gap: 30px; /* Odstępy między kafelkami */
-    margin: 0 auto; /* Wyśrodkowanie w poziomie */
+    gap: 10px; /* Odstępy między kafelkami */
+    margin: 150px; /* Wyśrodkowanie w poziomie */
     width: 80%; /* Opcjonalnie: szerokość kontenera */
     max-width: 800px; /* Opcjonalnie: maksymalna szerokość */
 }
 
 .info-item {
     text-align: center;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
     box-shadow: var(--shadow);
     transition: var(--transition);
     display: flex;
@@ -404,7 +405,7 @@ nav ul li a:hover::after {
 
 .info-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(158, 34, 34, 0.1);
 }
 
 .info-item i {
