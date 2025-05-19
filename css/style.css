@@ -110,7 +110,7 @@ img {
 /* Dodaj delikatny border do sekcji */
 section {
     padding: 80px 0;
-    border-bottom: 2px dashed #ffe0b2;
+    border-bottom: none;
 }
 
 /* Header Styles */
