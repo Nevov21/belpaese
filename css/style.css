@@ -22,7 +22,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--light-color);
+    background-color: #fff7e6; /* jasny kremowy */
 }
 
 .container {
@@ -77,6 +77,7 @@ img {
     margin-bottom: 10px;
 }
 
+/* Przyciski - cieplejszy kolor i cień */
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
@@ -87,11 +88,13 @@ img {
     transition: var(--transition);
     border: 2px solid var(--primary-color);
     cursor: pointer;
+    box-shadow: 0 4px 12px 0 rgba(215,52,39,0.10);
 }
 
 .btn:hover {
-    background-color: transparent;
+    background-color: #ffe0b2;
     color: var(--primary-color);
+    border-color: #ffe0b2;
 }
 
 .btn-outline {
@@ -104,8 +107,10 @@ img {
     color: white;
 }
 
+/* Dodaj delikatny border do sekcji */
 section {
     padding: 80px 0;
+    border-bottom: 2px dashed #ffe0b2;
 }
 
 /* Header Styles */
@@ -190,9 +195,9 @@ nav ul li a:hover::after {
     color: var(--secondary-color);
 }
 
-/* Hero Section */
+/* Hero Section - cieplejszy gradient */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-bg.jpg');
+    background: linear-gradient(120deg, rgba(215,52,39,0.85) 0%, rgba(241,196,15,0.85) 100%), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -203,11 +208,25 @@ nav ul li a:hover::after {
     text-align: center;
     margin-top: 0;
     padding-top: 0;
+    box-shadow: 0 8px 32px 0 rgba(215,52,39,0.15);
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+}
+
+/* Hero content - dodaj ikonę pizzy nad nagłówkiem */
+.hero-content::before {
+    content: "🍕";
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: pizza-bounce 2s infinite;
+}
+@keyframes pizza-bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
 }
 
 .hero-content h2 {
@@ -402,9 +421,11 @@ nav ul li a:hover::after {
     justify-content: center;
 }
 
+/* Kafelki kontaktowe po najechaniu */
 .info-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(158, 34, 34, 0.1);
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 16px 32px 0 rgba(215,52,39,0.18);
+    background-color: #ffe0b2;
 }
 
 .info-item i {
