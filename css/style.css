@@ -216,19 +216,6 @@ nav ul li a:hover::after {
     margin: 0 auto;
 }
 
-/* Hero content - dodaj ikonę pizzy nad nagłówkiem */
-.hero-content::before {
-    content: "🍕";
-    display: block;
-    font-size: 4rem;
-    margin-bottom: 10px;
-    animation: pizza-bounce 2s infinite;
-}
-@keyframes pizza-bounce {
-    0%, 100% { transform: translateY(0);}
-    50% { transform: translateY(-10px);}
-}
-
 .hero-content h2 {
     font-size: 3.5rem;
     margin-bottom: 20px;
