@@ -375,19 +375,18 @@ nav ul li a:hover::after {
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Siatka z kolumnami */
-    gap: 100px; /* Odstępy między kafelkami */
-    margin: 1000px; /* Wyśrodkowanie w poziomie */
-    width: 80%; /* Opcjonalnie: szerokość kontenera */
-    max-width: 800px; /* Opcjonalnie: maksymalna szerokość */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 300px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
 }
 
 .info-item {

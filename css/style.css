@@ -376,8 +376,7 @@ nav ul li a:hover::after {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
